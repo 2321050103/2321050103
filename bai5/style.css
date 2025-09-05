@@ -1,0 +1,49 @@
+body {
+  margin: 0px;
+}
+nav {
+  background-color: #0c4ca3;
+  padding: 10px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+li {
+  padding: 15px;
+}
+.boder {
+  border-right: 1px solid grey;
+}
+.danhmuc-lienket {
+  color: white;
+  text-decoration: none;
+  font-family: Roboto, Arial, Tahoma;
+}
+.qc {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  border-bottom: 10px solid #f1f1f2;
+}
+.tieude {
+  background-color: #2fa4e7;
+  padding: 10px;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  border-radius: 10px 10px 0px 0px;
+}
+.tintuc-danhsach {
+  display: flex;
+  justify-content: space-between;
+}
+.baiviet {
+  background-color: gray;
+  width: 30%;
+}
+.anhtintuc {
+  width: 100%;
+}
