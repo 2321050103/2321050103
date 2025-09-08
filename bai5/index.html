@@ -1,87 +1,719 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HUMG Edu</title>
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+ 
+  
+
+    <!-- Style CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="logo.png" alt="" />
-      <nav>
-        <ul>
-          <li class="border">
-            <a class="danhmuc-lienket" href="#">TRANG CHỦ</a>
+    <!-- HEADER -->
+    <header class="header">
+      <!-- Logo -->
+      <img src="./images/logo.png" alt="" class="logo" />
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link"
+              ><i class="fa-solid fa-house"></i
+            ></a>
           </li>
-          <li class="border">
-            <a class="danhmuc-lienket" href="#">GIỚI THIỆU</a>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link navbar__link--active">
+              GIỚI THIỆU
+            </a>
           </li>
-          <li class="border">
-            <a class="danhmuc-lienket" href="#">TUYỂN SINH</a>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">TUYỂN SINH</a>
           </li>
-          <li class="border">
-            <a class="danhmuc-lienket" href="#"> TIN TỨC</a>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">TIN TỨC</a>
           </li>
-          <li class="border">
-            <a class="danhmuc-lienket" href="#">ĐÀO TẠO</a>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">ĐÀO TẠO-ĐBCLGD</a>
           </li>
-          <li class="border">
-            <a class="danhmuc-lienket" href="#">KHOA HỌC CÔNG NGHỆ</a>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">KHOA HỌC-CÔNG NGHỆ</a>
           </li>
-          <li class="border">
-            <a class="danhmuc-lienket" href="#">HỢP TÁC ĐỐI NGOẠI</a>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">HỢP TÁC-ĐỐI NGOẠI</a>
           </li>
-          <li class="border">
-            <a class="danhmuc-lienket" href="#">SINH VIÊN</a>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">SINH VIÊN</a>
           </li>
-          <li>
-            <a class="danhmuc-lienket" href="#">HĐ GIÁO VIÊN CƠ SỞ</a>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">HĐ GIÁO SƯ CƠ SỞ</a>
           </li>
         </ul>
       </nav>
-      <div class="banner-pc"></div>
-      <div class="banner">
-        <img src="banner.png" alt="" />
-      </div>
-      <div class="qc">
-        <div class="anh-qc">
-          <img src="2.png" alt="" />
-        </div>
-        <div class="anh-qc">
-          <img src="2.png" alt="" />
-        </div>
-        <div class="anh-qc">
-          <img src="2.png" alt="" />
-        </div>
-        <div class="anh-qc">
-          <img src="2.png" alt="" />
-        </div>
-        <div class="anh-qc">
-          <img src="2.png" alt="" />
-        </div>
-        <div class="anh-qc">
-          <img src="2.png" alt="" />
-        </div>
-        <div class="anh-qc">
-          <img src="2.png" alt="" />
-        </div>
-      </div>
-      <h1>Tin Tức</h1>
-      <br />
-
-      <div class="tieudes"></div>
-      <div class="tintuc-danhsach">
-        <div class="baiviet">
-          <img class="anhtintuc" src="5.png" alt="" />
-          <p>Trường Đại học Mỏ Địa Chất tham gia chương trình</p>
-        </div>
-        <div class="baiviet"><img class="anhtintuc" src="3.png" alt="" /></div>
-        <div class="baiviet"><img class="anhtintuc" src="4.png" alt="" /></div>
-        <div class="baiviet"><img class="anhtintuc" src="6.png" alt="" /></div>
-      </div>
     </header>
-    <main></main>
-    <footer></footer>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Slideshow -->
+      <section class="slideshow">
+  <div class="container">
+    <div class="slider">
+      <div class="slides">
+        <img src="./images/ss-01.png" alt="" />
+      
+      </div>
+    </div>
+  </div>
+
+
+          <div class="qc">
+            <div class="anh-qc">
+              <img src="./images/2.png" alt="" />
+            </div>
+            <div class="anh-qc">
+              <img src="./images/2.png" alt="" />
+            </div>
+            <div class="anh-qc">
+              <img src="./images/2.png" alt="" />
+            </div>
+            <div class="anh-qc">
+              <img src="./images/2.png" alt="" />
+            </div>
+            <div class="anh-qc">
+              <img src="./images/2.png" alt="" />
+            </div>
+            <div class="anh-qc">
+              <img src="./images/2.png" alt="" />
+            </div>
+           
+          </div>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section class="news">
+        <div class="container">
+          <!-- New Header -->
+          <div class="news__header">
+            <a href="#!">
+              <h2 class="news__title heading2">TIN TỨC</h2>
+            </a>
+            <a href="#!" class="link-more">>Xem thêm</a>
+          </div>
+
+          <!-- News List -->
+          <div class="news__list">
+            <!-- Items 1 -->
+            <article class="news-item">
+              <a href="#!" class="news-item__link">
+                <figure>
+                  <img src="./images/5.png" alt="" class="news-item__img" />
+                  <h3 class="news-item__title">
+                    Trường Đại học Mỏ - Địa chất tham gia chương trình Tri ân -
+                    Về nguồn do Bộ Giáo dục và Đào tạo tổ chức tại Khu di tích
+                    Bộ Quốc gia Giáo dục (Xã Yên Nguyên, Tỉnh Tuyên Quang )
+                  </h3>
+                  <ul>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Hội nghị tổng kết việc thực hiện các chương trình khoa
+                        học và công nghệ cấp Bộ của Bộ giáo dục và Đào tạo
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Lễ ký Biên bản thỏa thuận hợp tác giữa Trường Đại học Mỏ
+                        - Địa Chất và Vegastar Technology Group
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Trường Đại học Mỏ - Địa Chất tái ký kết hợp tác với Công
+                        ty Cổ phần Đầu tư phát triển Đại Hưng Thịnh
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Thông báo tuyển sinh sau đại học đợt 2 năm 2025.
+                      </p>
+                    </li>
+                  </ul>
+                </figure>
+              </a>
+            </article>
+
+            <!-- Items 2 -->
+            <article class="news-item">
+              <a href="#!" class="news-item__link">
+                <figure>
+                  <img src="./images/3.png" alt="" class="news-item__img" />
+                  <h3 class="news-item__title">
+                    Hội thảo cấp Khoa về Xây dựng chương trình đào tạo trình độ
+                    đại học Ngành Ngôn ngữ Trung Quốc
+                  </h3>
+                  <ul>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Trường Đại học Mỏ - Địa Chất tổ chức Lễ khai giảng năm
+                        học 2023 - 2024
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Lễ Khai giảng khóa đào tạo Thạc sĩ K46 và Tiến sĩ 2023 -
+                        2026
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Trường Đại học Mỏ - Địa Chất tổ chức lễ trao bằng Tiến
+                        sĩ, Thạc sĩ K41 và K42
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Lễ khai giảng khóa đào tạo tiến sĩ năm 2022 - 2025 và
+                        thạc sĩ 2022 - 2024 (K44)
+                      </p>
+                    </li>
+                  </ul>
+                </figure>
+              </a>
+            </article>
+
+            <!-- Items 3 -->
+            <article class="news-item">
+              <a href="#!" class="news-item__link">
+                <figure>
+                  <img src="./images/6.png" alt="" class="news-item__img" />
+                  <h3 class="news-item__title">
+                    Nghiệm thu cấp Bộ đề tài NCKH cấp Bộ mã số B2023-MDA-05 do
+                    PGS.TS Lê Tiến Dũng làm chủ nhiệm
+                  </h3>
+                  <ul>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Nghiệm thu cấp Bộ đề tài NCKH cấp Bộ mã số B2023-MDA-07
+                        do PGS.TS Nguyễn Văn Mạnh làm chủ nhiệm
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Thông báo kế hoạch tài trợ đề tài tiềm năng (theo định
+                        hướng phát triển sản phẩm công nghệ chiến lược)
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Thông báo kế hoạch tài trợ đề tài tiềm năng đợt 1 năm
+                        2025
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Nghiệm thi cấp Cơ sở đề tài NCKH cấp Bộ mã số
+                        B2023-MDA-06 do TS Phạm Thị Nhàn làm chủ nhiệm
+                      </p>
+                    </li>
+                  </ul>
+                </figure>
+              </a>
+            </article>
+
+            <!-- Items 4 -->
+            <article class="news-item">
+              <a href="#!" class="news-item__link">
+                <figure>
+                  <img src="./images/4.png" alt="" class="news-item__img" />
+                  <h3 class="news-item__title">
+                    Trường Đại học Mỏ - Địa Chất tham dự Diễn đàn ROSTKI 2025 và
+                    tăng cường hợp tác với Đại học Liên bang Kazan
+                  </h3>
+                  <ul>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Trường Đại học Mỏ - Địa Chất tham gia chương trình IUT
+                        Summer Institute 2025 tại Liên Bang Nga
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Thúc đẩy hợp tác toàn diện giữa Trường Đại học Mỏ - Địa
+                        Chất và các đối tác Nhật Bản trong đào tạo, nghiên cứu
+                        và chuyển giao công nghệ
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Trường Đại học Mỏ - Địa chất tăng cường hợp tác quốc tế
+                        qua hai chương trình học thuật tại Trung Quốc
+                      </p>
+                    </li>
+                    <li class="item__list">
+                      <p class="item__desc">
+                        Hội nhập quốc tế qua hoạt động tiếp nhận sinh viên quốc
+                        tế tại Trường Đại học Mỏ - Địa Chất
+                      </p>
+                    </li>
+                  </ul>
+                </figure>
+              </a>
+            </article>
+          </div>
+
+          <!-- News Banner -->
+          <div class="news__banner">
+            <!-- Banner -->
+            <div id="banner" class="news-banner">
+              <a href="#!">
+                <img src="./images/2.png" alt="" class="news-banner__img" />
+              </a>
+              <a href="#!">
+                <img src="./images/2.png" alt="" class="news-banner__img" />
+              </a>
+              <a href="#!">
+                <img src="./images/2.png" alt="" class="news-banner__img" />
+              </a>
+              <a href="#!">
+                <img src="./images/2.png" alt="" class="news-banner__img" />
+              </a>
+              <a href="#!">
+                <img src="./images/2.png" alt="" class="news-banner__img" />
+              </a>
+            </div>
+
+            <!-- Link -->
+            <div class="news-link">
+              <h3 class="news-link__title">LIÊN KẾT WEBSITE</h3>
+              <select class="news-link__select" name="website">
+                <option>Liên kết website</option>
+                <option>Bộ Công thương</option>
+                <option>Bộ Khoa học và Công nghệ</option>
+                <option>Bộ Tài nguyên và Môi trường</option>
+                <option>Bộ Lao động - Thương binh và Xã hội</option>
+                <option>Bộ Thông tin và Truyền thông</option>
+                <option>Bộ Giáo dục và Đào tạo</option>
+                <option>Cục bản đồ - Bộ Tổng tham mưu</option>
+                <option>Tập đoàn VinGroup</option>
+                <option>
+                  Tổng công ty cổ phần công nghiệp xi măng Việt Nam
+                </option>
+                <option>Tổng công ty Đông Bắc</option>
+                <option>
+                  Tập đoàn Công nghiệp Than và Khoáng sản Việt Nam
+                </option>
+                <option>Tập đoàn Dầu khí Quốc gia Việt Nam</option>
+                <option>Tổng cục Địa chất và Khoáng sản Việt Nam</option>
+                <option>Khảo thí & đảm bảo CLGD</option>
+                <option>Khoa Cơ - Điện</option>
+                <option>Khoa Công nghệ thông tin</option>
+                <option>Khoa Dầu khí</option>
+                <option>Khoa Giáo dục quốc phòng</option>
+                <option>Khoa Khoa học cơ bản</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Notify -->
+      <section class="notify">
+        <div class="container">
+          <div class="notify__heading-wrapper">
+            <h2 class="heading2 notify__heading">THÔNG BÁO</h2>
+          </div>
+          <div class="notify__inner">
+            <!-- Media -->
+            <div class="notify__media">
+              <a href="#!">
+                <img src="./images/notify.jpg" alt="" class="notify__img" />
+                <p class="notify__desc">Thông báo thanh lý tài sản (lần 2)</p>
+              </a>
+            </div>
+
+            <!-- Content -->
+            <div class="notify__content">
+              <div class="column-1">
+                <ul class="notify__list">
+                  <li class="notify-item">
+                    <a href="#!">
+                      <p class="notify__desc notify-item__desc">
+                        THÔNG BÁO KẾT QUẢ XÉT CÔNG NHẬN ĐẠT TIÊU CHUẨN CHỨC DANH
+                        GIÁO SƯ, PHÓ GIÁO SƯ NĂM 2025
+                      </p>
+                    </a>
+                  </li>
+                  <li class="notify-item">
+                    <a href="#!">
+                      <p class="notify__desc notify-item__desc">
+                        Thông báo thanh lý tài sản
+                      </p>
+                    </a>
+                  </li>
+                  <li class="notify-item">
+                    <a href="#!">
+                      <p class="notify__desc notify-item__desc">
+                        Thông báo gia hạn thời hạn tuyển dụng thường xuyên viên
+                        chức của Trường Đại học Mỏ - Địa chất
+                      </p>
+                    </a>
+                  </li>
+                  <li class="notify-item">
+                    <a href="#!">
+                      <p class="notify__desc notify-item__desc">
+                        (Quỹ Nafosted) Thông báo kế hoạch tài trợ đề tài nghiên
+                        cứu cơ bản năm 2025
+                      </p>
+                    </a>
+                  </li>
+                  <li class="notify-item">
+                    <a href="#!">
+                      <p class="notify__desc notify-item__desc">
+                        Về việc đề cử thành viên tham gia Hội đồng Giáo sư cơ sở
+                        năm 2025
+                      </p>
+                    </a>
+                  </li>
+                  <li class="notify-item">
+                    <a href="#!">
+                      <p class="notify__desc notify-item__desc">
+                        Trường Đại học Mỏ - Địa chất đề xuất gia nhập Liên minh
+                        các trường đại học kỹ thuật Nga – Việt.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#!" class="link-more notify__link-more">>Xem thêm</a>
+              </div>
+              <div class="column-2">
+                <h3 class="notify__title">Sự kiện sắp diễn ra</h3>
+              </div>
+              <div class="column-3">
+                <a href="#!" class="link-more">>Xem thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- thong tin -->
+      <section class="thongtin">
+        <div class="container">
+          <div class="thongtin__header">
+            <h2 class="thongtin__heading heading2 thongtin__heading--active">
+              THÔNG TIN TUYỂN SINH
+            </h2>
+            <h2 class="thongtin__heading heading2">NGÀNH TUYỂN SINH</h2>
+            <a href="#!" class="link-more thongtin__link-more">>Xem thêm</a>
+          </div>
+
+          <!-- Information -->
+          <div class="thongtin__info">
+            <!-- Item 1 -->
+            <article class="info-item">
+              <a href="#!">
+                <div class="info-item__img-wrapper">
+                  <img src="./images/6.png" alt="" class="info-item__img" />
+                </div>
+                <h3 class="info-item__title">
+                  Thông báo tuyển sinh SĐH đợt 2 năm 2025
+                </h3>
+              </a>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="info-item">
+              <a href="#!">
+                <div class="info-item__img-wrapper">
+                  <img src="./images/6.png" alt="" class="info-item__img" />
+                </div>
+                <h3 class="info-item__title">
+                  Thông báo tuyển sinh sau đại học đợt 2 năm 2025
+                </h3>
+              </a>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="info-item">
+              <a href="#!">
+                <div class="info-item__img-wrapper">
+                  <img src="./images/7.jpg" alt="" class="info-item__img" />
+                </div>
+                <h3 class="info-item__title">
+                  THÔNG BÁO NGƯỠNG ĐIỂM XÉT TUYỂN ĐỢT 1 HỆ ĐẠI HỌC NĂM 2025
+                </h3>
+              </a>
+            </article>
+
+            <!-- Item 4 -->
+            <article class="info-item">
+              <a href="#!">
+                <div class="info-item__img-wrapper">
+                  <img src="./images/8.jpg" alt="" class="info-item__img" />
+                </div>
+                <h3 class="info-item__title">
+                  Thông tin tuyển sinh đại học chính quy năm 2025
+                </h3>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hoạt Động-->
+      <section class="hoatdong">
+        <div class="container">
+          <div class="hoatdong__header">
+            <h2 class="heading2 action__heading">HOẠT ĐỘNG SINH VIÊN</h2>
+            <a href="#!" class="link-more">>Xem thêm</a>
+          </div>
+
+          <div class="news__list">
+            <!-- Item 1 -->
+            <article class="news-item">
+              <a href="#!">
+                <div class="info-item__img-wrapper">
+                  <img src="./images/6.png" alt="" class="info-item__img" />
+                </div>
+                <h3 class="info-item__title">Giảng đường - Phòng học</h3>
+              </a>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="news-item">
+              <a href="#!">
+                <div class="info-item__img-wrapper">
+                  <img
+                    src="./images/action__img-01.jpg"
+                    alt=""
+                    class="info-item__img"
+                  />
+                </div>
+                <h3 class="info-item__title">
+                  Hãy đến với các câu lạc bộ của Trường Đại học Mỏ - Địa Chất để
+                  thắp sáng ngọn lửa đam mê của mình bạn nhé
+                </h3>
+                <ul>
+                  <li class="item__list">
+                    <p class="item__desc">
+                      Sinh viên Câu lạc bộ Môi trường tổ chức hoạt động hưởng
+                      ứng ngày Môi trường thế giới 05/6
+                    </p>
+                  </li>
+                  <li class="item__list">
+                    <p class="item__desc">
+                      Ngày hội sách "Chặng đường tri thức" năm 2019
+                    </p>
+                  </li>
+                </ul>
+              </a>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="news-item">
+              <a href="#!">
+                <div class="info-item__img-wrapper">
+                  <img
+                    src="./images/action__img-02.png"
+                    alt=""
+                    class="info-item__img"
+                  />
+                </div>
+                <h3 class="info-item__title">
+                  Chúc mừng đội tuyển Olympic Vật lý của Trường Đại học Mỏ - Địa
+                  Chất đạt giải nhì toàn đoàn trong cuộc thi Olympic Vật lý Sinh
+                  viên toàn quốc lần thứ XXVI - 2024
+                </h3>
+                <ul>
+                  <li class="item__list">
+                    <p class="item__desc">
+                      Vòng chung kết Cuộc thi Ý tưởng khởi nghiệp sinh viên HUMG
+                      2024
+                    </p>
+                  </li>
+                  <li class="item__list">
+                    <p class="item__desc">
+                      Sinh viên HUMG với E-UNITOUR 2023: "Xu hướng mới trong
+                      kinh doanh số và cơ hội cho sinh viên"
+                    </p>
+                  </li>
+                </ul>
+              </a>
+            </article>
+
+            <!-- Item 4 -->
+            <article class="news-item">
+              <a href="#!">
+                <div class="info-item__img-wrapper">
+                  <img
+                    src="./images/action__img-03.png"
+                    alt=""
+                    class="info-item__img"
+                  />
+                </div>
+                <h3 class="info-item__title">
+                  Hướng dẫn nhập học trực tuyến năm 2024
+                </h3>
+                <ul>
+                  <li class="item__list">
+                    <p class="item__desc">
+                      Kế hoạch và thủ tục nhập học đại học hệ chính quy năm 2024
+                      Đợt 1
+                    </p>
+                  </li>
+                  <li class="item__list">
+                    <p class="item__desc">
+                      Kế hoạch và thủ tục nhập học đại học chính quy năm 2022 -
+                      Đợt 2
+                    </p>
+                  </li>
+                </ul>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- doitac -->
+      <section class="doitac">
+        <div class="container">
+          <div class="doitac__header">
+            <h2 class="heading2 doitac__heading">ĐỐI TÁC</h2>
+          </div>
+
+          <div class="doitac__img-wrapper">
+            <img src="./images/9.jpg" alt="" class="doitac__img" />
+            <img src="./images/10.jpg" alt="" class="doitac__img" />
+            <img src="./images/11.jpg" alt="" class="doitac__img" />
+            <img src="./images/12.jpg" alt="" class="doitac__img" />
+            <img src="./images/13.jpg" alt="" class="doitac__img" />
+            <img src="./images/14.jpg" alt="" class="doitac__img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Video -->
+      <section class="video">
+        <div class="container">
+          <div class="video__inner">
+            <div class="video__media">
+              <h3 class="video__title">
+                Video tri ân GS Daniel Dias, Pháp, nhân dịp GS nhận Kỉ niệm
+                chương vì sự nghiệp giáo dục
+              </h3>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/HrVPDm-0eNI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video__content">
+              <h3 class="video__title">MEDIA</h3>
+
+              <ul class="video__list">
+                <li>
+                  <a href="#!" class="video__link"
+                    >BÊ TÔNG XANH TRUYỀN SÁNG - TS Tăng Văn Lâm</a
+                  >
+                </li>
+                <li>
+                  <a href="#!" class="video__link"
+                    >Giải mã khối bê tông không xi măng do nhóm sinh viên HUMG
+                    nghiên cứu | VTV24</a
+                  >
+                </li>
+                <li>
+                  <a href="#!" class="video__link"
+                    >Bê tông không xi măng-QPVN</a
+                  >
+                </li>
+                <li>
+                  <a href="#!" class="video__link"
+                    >TU Freiberg Geotech-excursion 2023 in Vietnam</a
+                  >
+                </li>
+                <li>
+                  <a href="#!" class="video__link"
+                    >Kyushu students at HUMG 2023</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <!-- Column 1 -->
+          <div class="footer__column">
+            <h3 class="footer__title">BẢN ĐỒ CHỈ DẪN</h3>
+            <p class="footer__desc">Trường Đại học Mỏ - Địa Chất</p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="footer__column">
+            <h3 class="footer__title">MẠNG XÃ HỘI</h3>
+          </div>
+
+          <div class="footer__right">
+            <div class="footer-right__top">
+              <!-- Column 3 -->
+              <div class="footer__column">
+                <h3 class="footer__title">SƠ ĐỒ TRANG</h3>
+                <a href="#!">
+                  <p class="footer__desc">Xem sơ đồ trang</p>
+                  <p class="footer__desc">RSS</p>
+                </a>
+              </div>
+
+              <!-- Column 4 -->
+              <div class="footer__column">
+                <h3 class="footer__title">BẢN ĐỒ CHỈ DẪN</h3>
+                <p class="footer__desc">Trường Đại học Mỏ - Địa Chất</p>
+              </div>
+            </div>
+            <div class="separate"></div>
+            <div class="footer-right__bottom">
+              <p class="footer__desc">
+                Bản quyền thuộc về Trường Đại học Mỏ -Địa chất
+              </p>
+              <p class="footer__desc">
+                Địa chỉ: Số.18, Phố Viên - Phường Đông Ngạc - TP Hà Nội
+              </p>
+              <p class="footer__desc">
+                Điện thoại: (+84-24) 38 38 96 33 | Email:
+                hanhchinhtonghop@humg.edu.vn
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/KhoiNguyen-265/slideon@v1.0.1/slideon.min.js"></script>
+    <script>
+      const slider = new Slideon("#slider", {
+        items: 1,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+      });
+    </script>
   </body>
 </html>
