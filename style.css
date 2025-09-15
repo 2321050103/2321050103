@@ -1,270 +1,48 @@
 body {
-  background-color: black;
-}
-header.timkiem {
-  display: flex;
-  padding: 10px;
-  color: white;
-  justify-self: space-between;
-  align-items: center;
-}
-.dautrai {
-  display: flex;
-  text-align: center;
-  font-size: 20px;
-  margin: 5px;
-}
-.ngoacphai {
-  line-height: 35px;
-}
-.ngoactrai {
-  width: 50px;
-  color: rgb(105, 104, 104);
-  line-height: 35px;
-}
-.cham {
-  margin-left: 5px;
-  line-height: 20px;
-  font-size: 30px;
-}
-.daugiua {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex: 1;
-}
-.dauphai {
-  display: flex;
-  gap: 10px;
-}
-.logoanh {
-  width: 40px;
-  border-radius: 100%;
-}
-.thanhtimkiem {
-  border-radius: 10px;
-  height: 40px;
-  width: 250px;
-}
-.anhthongbao {
-  border-radius: 100%;
-}
-.box1 {
-  background-color: #121212;
-}
-.box2 {
-  background-color: #121212;
-}
-.box3 {
-  background-color: #121212;
-}
-.content {
-  list-style: none; /* bỏ dấu chấm */
-  padding: 0; /* bỏ thụt trái mặc định */
-  margin: 0; /* bỏ margin mặc định */
-  width: 100%; /* chiếm toàn bộ chiều ngang màn */
-}
-.box {
-  display: flex;
-  gap: 10px;
-}
-.box1 {
-  width: 400px;
-  border-radius: 10px;
-}
-.box3 {
-  width: 400px;
-  border-radius: 10px;
-}
-.box2 {
-  flex: 1;
-  border-radius: 10px;
+  background-color: #f0f2f5;
 }
 
-.pdbox {
-  display: flex;
-  flex: 1;
-  color: white;
+.container {
+  height: 90vh;
+  width: 700px;
+  margin: auto;
 }
-.pdbox1 {
-  margin: 15px 0px 0px 10px;
-  flex: 1;
+.logo {
+  color: blue;
 }
-.pdbox2 {
-  margin: 10px 10px;
-  border: 2px solid white;
-  padding: 5px;
-  border-radius: 20px;
-}
-.tinbox {
-  color: white;
-  display: flex;
-  gap: 38px;
-  width: 100%;
-  margin-right: 20px;
-  margin-left: 10px;
-}
-.tinbox1 {
-  border: 1px solid rgba(255, 255, 255, 0.068);
-  padding: 5px;
+
+.form-nhap-thong-tin {
+  background-color: white;
+  height: 70vh;
+  width: 550px;
+  margin: 50px auto;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.068);
 }
-.anhbaihat {
-  width: 50px;
+input {
+  padding: 10px;
+  border: 1px soild gray;
+  border-radius: 7px;
+}
+button {
+  padding: 10px 40px;
+  background-color: green;
+  color: white;
+  border: none;
   border-radius: 5px;
 }
-.baihat1 {
-  margin-top: 10px;
-  color: white;
-  display: flex;
-  gap: 10px;
-  margin-left: 10px;
+a {
+  text-decoration: none;
 }
-.tenbai {
-  margin-top: -10px;
-  flex: 1;
+.tieu-de {
+  text-algin: center;
 }
-.phubai {
-  margin-top: -10px;
-  margin-bottom: 10px;
-  list-style: none;
+select {
+  padding: 10px;
+  width: 30%;
 }
-footer {
-  display: flex;
-  color: white;
-}
-.ftlogo1 {
-  border-radius: 100px;
-  width: 40px;
-  margin-top: 25px;
-}
-.anhgiua {
-  padding: 10px 0px;
-  flex: 1;
-  justify-content: center;
-  text-align: center;
-}
-.anhgiua1 {
-  width: 30px;
-  border-radius: 10px;
-}
-.baihatdangchay {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.baihatchay {
-  margin-top: 5px;
-  list-style: none;
-}
-.tieude {
-  color: white;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-.anhphai {
-  flex: 1;
-  margin: 10px 0px;
-  text-align: center;
-}
-.baihatphai {
-  color: white;
-  margin-left: 20px;
-  margin-top: -10px;
-  flex: 1;
-}
-.phubaiphai {
-  margin-top: -15px;
-}
-.boxtenbaiphai {
-  display: flex;
-}
-.tichbaiphai {
-  width: 30px;
-  border-radius: 100%;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-.baihat3 {
-  margin-top: 10px;
-  color: white;
-  display: flex;
-  gap: 10px;
-  margin-left: 20px;
-}
-.fl {
-  color: white;
-  margin-top: 15px;
-  margin-right: 20px;
-  border: 2px solid white;
-  padding: 5px;
-  height: 17px;
-  width: 50px;
-  border-radius: 20px;
-  text-align: center;
-}
-.tenmuc {
-  color: white;
-  display: flex;
-  gap: 10px;
-  margin: 20px 20px;
-}
-.tenmuc1 {
-  border: 1px solid rgba(255, 255, 255, 0.068);
-  padding: 5px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.068);
-}
-.baihat2 {
-  color: white;
-  display: flex;
-  gap: 10px;
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-.anhbaihatgiua {
-  width: 40px;
-  border-radius: 10px;
-}
-.baihatgiua {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.167);
-  border-radius: 10px;
-  width: 150px;
-  background-color: rgba(255, 255, 255, 0.167);
-}
-.made {
-  color: white;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-.madeduoi {
-  color: white;
-  display: flex;
-  margin: 0px 20px;
-}
-.h2made {
-  flex: 1;
-  margin: 0;
-}
-.limade {
-  margin-top: 5px;
-}
-.baihattob2 {
-  margin: 20px 20px;
-  gap: 10px;
-  color: white;
-}
-.anhbaihattob2 {
-  width: 100px;
-  margin-bottom: 5px;
-  border-radius: 20px;
-}
-.boxbaihat {
-  display: flex;
+.gioi-tinh {
+  border: 1px soild gray;
+  padding: 10px;
+  border-radius: 5px;
+  width: 28%;
 }
