@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Viết ra "hello world"
+      document.writeln("hello world <br>");
+
+      // Dùng dấu + để nối chuỗi
+      let hoTen = "Hoang Manh Cuong";
+      document.writeln(hoTen + "<br>");
+
+      // Khai báo hằng số
+      const pi = 3.14;
+
+      // Khai báo biến số
+      let soThuNhat = 10;
+      let soThuHai = 5;
+      let ketQua = 0;
+
+      // Các phép toán
+      ketQua = soThuNhat + soThuHai;
+      document.writeln("Cộng: " + ketQua + "<br>");
+
+      ketQua = soThuNhat - soThuHai;
+      document.writeln("Trừ: " + ketQua + "<br>");
+
+      ketQua = soThuNhat * soThuHai;
+      document.writeln("Nhân: " + ketQua + "<br>");
+
+      ketQua = soThuNhat / soThuHai;
+      document.writeln("Chia: " + ketQua + "<br>");
+
+      ketQua = soThuNhat % soThuHai;
+      document.writeln("Chia lấy dư: " + ketQua + "<br>");
+
+      // Toán tử +=
+      soThuNhat += soThuHai;
+      document.writeln("Sau += : " + soThuNhat + "<br>");
+
+      // Lấy năm hiện tại
+      let namNay = new Date().getFullYear();
+
+      // Thông tin sinh viên
+      let thongTinSinhVien = {
+        hoTen: "Hoang Manh Cuong",
+        tuoi: 20,
+        gioiTinh: true,
+        Lop: "Tin Kinh Te K68",
+        diachi: {
+          thanhpho: "Thanh Hoa",
+          quanhuyen: "Hoằng Hoá",
+        },
+      };
+
+      // In thông tin sinh viên
+      document.writeln(
+        "Xin chào " +
+          thongTinSinhVien.hoTen +
+          ", lớp " +
+          thongTinSinhVien.Lop +
+          "<br>" +
+          "Thành phố: " +
+          thongTinSinhVien.diachi.thanhpho +
+          "<br>" +
+          "Năm sinh: " +
+          (namNay - thongTinSinhVien.tuoi) +
+          "<br>"
+      );
+
+      // Kiểu dữ liệu khi parse string sang số
+      let chuoiSo = "10";
+      chuoiSo = parseInt(chuoiSo);
+      document.writeln("Kiểu dữ liệu sau parseInt: " + typeof chuoiSo + "<br>");
+    </script>
+  </body>
+</html>
