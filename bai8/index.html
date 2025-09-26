@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width>>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let donHang = {
+        hoTen: " Hoang Manh Cuong",
+        sdt: "0843854128",
+        thanhVien: true,
+        danhsachSanPham: {
+          sp1: {
+            maSP: "BN001",
+            tenSP: "Cà Phê",
+            soLuong: "50",
+            giaTien: "10000",
+          },
+          sp2: {
+            maSP: "AN001",
+            tenSP: "matcha",
+            soLuong: "50",
+            giaTien: "10000",
+          },
+
+          sp3: {
+            maSP: "CN001",
+            tenSP: "Trà Sữa",
+            soLuong: "50",
+            giaTien: "10000",
+          },
+        },
+        tranhthaitt: true,
+        diachi: "hanoi",
+      };
+      let tongTT =
+        donHang.danhsachSanPham.sp1.soLuong *
+          donHang.danhsachSanPham.sp1.giaTien +
+        donHang.danhsachSanPham.sp2.soLuong *
+          donHang.danhsachSanPham.sp2.giaTien +
+        donHang.danhsachSanPham.sp3.soLuong *
+          donHang.danhsachSanPham.sp3.giaTien;
+      document.writeln(" Tổng phải thanh toán :" + tongTT + "<br>");
+
+      //STRING
+      let hoTen = " Hoang Manh Cuong";
+      document.writeln(hoTen.length);
+      let myString = "hello";
+      document.writeln(myString.slice(1, 4));
+      // thay thế
+      document.writeln(myString.replace("hello", "hi"));
+      //chọn
+      document.writeln(myString[0]);
+      // đổi chữ hoa alf thường
+      document.writeln(myString.toLocaleLowerCase());
+      // kiểm tra có tồn tại khong
+      // icludes và indexof giống nhau true/flase
+      document.writeln(myString.indexOf("e"));
+      // tách chuỗi thànnh mảng
+      document.writeln(myString.split("").length);
+      //kiểm tra chuỗi bắt đầu
+      document.writeln(myString.startsWith("hello"));
+      // định dạn sau số thập phân
+      var pi = 3.1434357;
+      document.writeln(pi.toFixed(4));
+      // kiểm tra
+      document.writeln(isNaN("10"));
+      //lấy nagfy
+      let today = new Date("2024-12-28");
+      document.writeln(today);
+      //lay ra nam
+      document.writeln(today.getFullYear());
+      //lay ra thang
+      document.writeln(today.getMonth());
+      //lay ra ngay
+      document.writeln(today.getDate());
+      // lay ra h
+      document.writeln(today.getHours());
+    </script>
+  </body>
+</html>
