@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Mảng
+      let arr = [1, 2, 3, 4, "a", "b", "c", 2, 3];
+      let ten = "ten";
+      let thongtin = {
+        ten: ten,
+      };
+      // check xem có phải mảng hay không
+      document.writeln(Array.isArray(arr));
+      // độ dài của mảg
+      document.writeln(arr.length);
+      // truy cập vào phần tử
+      document.writeln(arr[2]);
+      // kiểm tra vị trí ban đầu
+      document.writeln(arr.indexOf(3));
+      document.writeln(arr.lastIndexOf(3));
+      // thay đổi vị trí trong mảng
+      arr[3] = 6;
+      document.writeln(arr);
+      let a, b, c, d;
+      a = [1, 2, 3];
+      b = "JavaScript";
+      c = [42, "JS"];
+      d = a.concat(b, c);
+      //d = d.join("/"); them phan tử
+      // d.pop(); bỏ phần tử cuối
+      d.push("Hương");
+      d.reverse();
+      // xoá phần tử đầu tiên
+      d.shift();
+      // thêm phần tử đầu mảng
+      d.unshift("bv");
+      document.writeln(Array.isArray(d));
+      document.writeln(d);
+      let so = 1000000000000000000000001n;
+      if (so % 2n == 0n) {
+        document.writeln(" số chẵn");
+      } else {
+        document.writeln(" số lẻ");
+      }
+      // let so ="100000000001"
+      //  let soCuoi =paseInt(so[so.length-1]);
+      //if (socuoi %2==0)
+      let now = new Date().getHours;
+      if (now >= 5 && now < 10) {
+        document.writeln(" Chào Buổi Sáng");
+      } else if (now >= 10 && now < 13) {
+        document.writeln("chào buổi trưa");
+      } else if (now >= 13 && now < 17) {
+        document.writeln("chào buổi chiều");
+      } else if (now >= 17 && now < 22) {
+        document.writeln("chào buổi tối");
+      } else document.writeln("chào buổi đêm");
+      // a,b,c
+      //tổng = điểm a nhân 0.6 cộng điểm b nhân 0.3 cộng c.0.1
+      //tổng nằm trong khoảng 8 đến 10 : điểm  ABORT
+      let A = 8,
+        B = 9,
+        C = 10;
+      let tong = A * 0.6 + B * 0.3 + C * 0.1;
+      if (tong >= 4 && tong < 5) {
+        document.writeln(" D");
+      } else if (tong >= 5 && tong < 7) {
+        document.writeln("C");
+      } else if (tong >= 7 && tong < 8) {
+        document.writeln("B");
+      } else if (tong >= 8 && tong <= 10) {
+        document.writeln("A");
+      } else document.writeln("F");
+    </script>
+  </body>
+</html>
