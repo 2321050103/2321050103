@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+       let d = new Date();
+       let theDay = d.getDay(); //5
+       switch (theDay) {
+         case 5:
+           document.writeln("Finally Friday");
+           break;
+         case 6:
+           document.writeln("Super Saturday");
+           break;
+         case 0:
+           document.writeln("Sleep Sunday");
+           break;
+         case 1:
+         case 2:
+         case 3:
+           document.writeln("I'm looking forward to this weekend");
+           break;
+         default:
+           document.writeln("I'm looking forward to this weekend");
+       }
+       for (let i = 1; i < 1000; i++) {
+         document.write(i + "Hoàng Cường <br>");
+       }
+       let danhsach = ["tài", "đức", "bình", "đại", "cường"];
+       for (let i = 0; i < danhsach.length; i++) {
+         document.write(i + " " + danhsach[i] + "<br>");
+       }
+
+       alert("hello");
+       let reuslt = confirm("Press a button");
+       if (result == true) {
+         document.writeln("Bấm oke");
+       } else {
+         document.writeln("Bấm cancel");
+       }
+       let result2 = prompt("Nhập họ và tên", "ví dụ:ABC");
+       document.writeln(result2);
+      // function + tenham(){
+      function sayHELLO(){
+         document.writeln("Xin chafo");
+
+      }
+      let ten = prompt("Nhập họ tên", "ví dụ: ABC");
+      let namsinh =prompt("Nhập năm sinh","ví dụ:1997");
+
+      function sayHello2(ten,namsinh){
+         document.writeln("Xin Chào "+ ten +" sinh năm"+nam sinh);
+
+
+      }
+      sayHello2(ten,namsinh);
+    </script>
+  </body>
+</html>
