@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính điểm</title>
+  </head>
+  <body>
+    <h1>Tính điểm</h1>
+    Điểm A:
+    <input type="number" name="" id="diema" /><br /><br />
+    Điểm B:
+    <input type="number" name="" id="diemb" /><br /><br />
+    Điểm C:
+    <input type="number" name="" id="diemc" /><br /><br />
+    <button onclick="tinhTong()">Tính tổng</button>
+    Kết quả:
+    <input type="number" name="" id="ketqua" />
+
+    Điểm chữ:
+    <input type="text" name="" id="diemchu" />
+
+    <script>
+      function tinhTong() {
+        let diema = parseFloat(document.getElementById("diema").value);
+        let diemb =  parseFloat(document.getElementById("diemb").value;
+        let diemc =  parseFloat(document.getElementById("diemc").value);
+        let canhBao = "";
+
+        if (!diema) canhBao += " Vui lòng nhập điểm A";
+        if (!diemb) canhBao += " Vui lòng nhập điểm B";
+        if (!diemc) canhBao += " Vui lòng nhập điểm C";
+
+        if (canhBao) {
+          alert(canhBao);
+        }
+
+        let tong = diema * 0.6 + diemb * 0.3 + diemc * 0.1;
+        document.getElementById("ketqua").value = tong;
+        let diemchu = "";
+        if (tong <= 4) diemchu = "F";
+        else if (tong <= 5) diemchu = "D";
+        else if (tong <= 7) diemchu = "C";
+        else if (tong <= 8) diemchu = "B";
+        else diemchu = "A";
+        document.getElementById("diemchu").value = diemchu;
+      }
+    </script>
+  </body>
+</html>
