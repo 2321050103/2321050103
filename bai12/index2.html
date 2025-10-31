@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính chỉ số BMI</title>
+  </head>
+  <body>
+    <h2>Tính chỉ số BMI</h2>
+    <div>
+      Nhập chiều cao (m): <input type="number" step="0.01" id="chieuCao" />
+    </div>
+    <div>
+      Nhập cân nặng (kg): <input type="number" step="0.1" id="canNang" />
+    </div>
+    <div>
+      <button onclick="tinhchiso()">Tính chỉ số BMI</button>
+    </div>
+    <div>Kết quả BMI: <input type="text" id="ketQua" class="ketQua" /></div>
+    p>
+    <img id="anhBMI" src="" alt="Kết quả BMI" />
+
+    <script>
+      function tinhchiso() {
+        let chieuCao = parseFloat(document.getElementById("chieuCao").value);
+        let canNang = parseFloat(document.getElementById("canNang").value);
+        let ketQua = document.getElementById("ketQua");
+
+        let anh = document.getElementById("anhBMI");
+
+        if (!chieuCao || !canNang || chieuCao <= 0 || canNang <= 0) {
+          alert("Vui lòng nhập đúng chiều cao và cân nặng!");
+        }
+
+        let chisoBMI = canNang / (chieuCao * chieuCao);
+        ketQua.value = chisoBMI.toFixed(1);
+
+        if (chisoBMI < 18.5) {
+          img.src = "z7173870276393_8d9e4cda002d0ee4bbeda73ed2147a03.jpg";
+        } else if (chisoBMI >= 18.5 && chisoBMI < 25) {
+          img.src = "z7173870475372_38cac1af6365012333203ca3a0ccaeb3.jpg";
+        } else if (chisoBMI >= 25 && chisoBMI < 30) {
+          img.src = "z7173870376121_2decd8a655f001071cf961efa90f778d.jpg";
+        } else if (chisoBMI >= 30 && chisoBMI < 40) {
+          img.src = "z7173870444523_e30867f79d29fa2e23ceb49a67f0bdbd.jpg";
+        } else {
+          img.src = "z7173869672358_587bbd307dbce6a41984ff6b4f4afd44.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>
